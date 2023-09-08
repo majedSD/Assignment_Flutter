@@ -1,4 +1,6 @@
-
+/**------------------MAJEDUL ISLAM-----------------
+ * ------------------MODULE-5-ASSIGNMENT-----------
+ */
 import 'package:flutter/material.dart';
 void main(){
  runApp(const MyApp());
@@ -32,15 +34,16 @@ class HomeActivity extends StatelessWidget{
     child:Column(
      mainAxisAlignment: MainAxisAlignment.center,
      children: [
-      Text('This is mod 5 Assignment',style: TextStyle(fontWeight: FontWeight.bold),),
-      Row(
-       mainAxisAlignment: MainAxisAlignment.center,
-       children:[
-       Text('My ',style: TextStyle(color: Colors.pink,fontSize: 30),),
-       Text('phone ',style: TextStyle(color: Colors.lightBlue),),
-       Text('name ',style: TextStyle(color: Colors.purpleAccent,fontSize: 20),),
-       Text('Your phone name ',style: TextStyle(color: Colors.orangeAccent,fontSize: 30),),
-    ]
+      Text('This is mod 5 Assignment',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+       RichText(text: TextSpan(
+           children:[
+            TextSpan(text: 'My ',style: TextStyle(color: Colors.pink,fontSize: 30),),
+            TextSpan(text: 'phone ',style: TextStyle(color: Colors.lightBlue),),
+            TextSpan(text: 'name ',style: TextStyle(color: Colors.purpleAccent,fontSize: 20),),
+            TextSpan(text: 'Your phone name ',style: TextStyle(color: Colors.orangeAccent,fontSize: 30),),
+           ]
+       )
+
       ),
 
        ],
